@@ -5,6 +5,8 @@ import com.bankingservice.demo.repository.BankUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BankServiceImpl implements BankService{
 
@@ -18,5 +20,12 @@ public class BankServiceImpl implements BankService{
     @Override
     public BankAccount save(BankAccount accountDetails) {
         return bankUser.save(accountDetails);
+    }
+
+    @Override
+    public List<BankAccount> findAll() {
+
+
+        return bankUser.findAll();
     }
 }
