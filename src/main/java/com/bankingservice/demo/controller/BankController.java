@@ -23,7 +23,7 @@ public class BankController {
         jsonMapper = theJsonMapper;
     }
 
-    @PostMapping("/save")
+    @PostMapping("/accounts")
     public BankAccount addBankAccount(@RequestBody BankAccount accountDetails){
 
 
